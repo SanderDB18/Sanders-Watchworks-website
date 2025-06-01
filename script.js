@@ -22,7 +22,7 @@ window.onload = () => {
     // Omzetten naar een Number
     let wallet = Number(walletText.replace(regex, ''));
 
-    // Functie om het totaalbedrag uit het invoerveld 'total' te halen en te converteren naar een getal
+    // Functie om het totaalbedrag uit het invoerveld 'total' te halen en om te zetten naar een getal
     function getTotal() {
         const totalInput = document.getElementById("total").value;
         // Regex opnieuw om symbolen te verwijderen
