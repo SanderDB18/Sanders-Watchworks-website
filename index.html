@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchworks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="index">
+    <div class="intro-overlay" id="intro">
+        <div class="intro-content">
+            <h1>Welkom bij <span>Watchworks</span> van Sander</h1>
+            <p>Kies uw eigen samenstelling en geniet van perfectie!</p>
+            <button id="start-intro">Start</button>
+        </div>
+    </div>
+    <div class="item">
+        <h2>Stel hieronder jouw combinatie samen!</h2>
+        <p>Een combinatie van 1 horloge en 1 extra product is mogelijk! Selecteer de producten die jij graag wilt en
+            bekijk hoe duur deze combinatie is.</p>
+        <h3>Kies hieronder jouw horloge!</h3>
+        <div class="btn-grid1">
+            <button class="pat">Patek Grand</button>
+            <button class="rm">RM 56-02</button>
+            <button class="roy">Royal Oak</button>
+            <button class="ast">Astronomia</button>
+            <button class="day">Daytona</button>
+            <button class="gf">GF Quad</button>
+            <button class="vac">Vacheron</button>
+            <button class="big">Big Bang</button>
+            <button class="exc">Excalibur</button>
+            <button class="hm9">HM9 Flow</button>
+        </div>
+        <h3>Kies hieronder jouw extra product!</h3>
+        <div class="btn-grid2">
+            <button class="wat">Watch box</button>
+            <button class="sun">Sunglasses</button>
+            <button class="tra">Travel bag</button>
+            <button class="wal">Wallet</button>
+            <button class="tom">Tom Ford parfume</button>
+            <button class="jac">Jacket</button>
+        </div>
+        <div class="portemonnee">
+            <h3>Jouw portemonnee:</h3>
+            <span id="wallet"></span>
+        </div>
+    </div>
+    <div class="item">
+        <h2>Preview:</h2>
+        <img class="horloge" src="Images/PatekGrand.PNG" alt="horloge">
+        <p class="horloge-naam">Patek Grand - €1.400.000</p>
+
+        <img class="extra" src="Images/Watchbox.PNG" alt="extra product">
+        <p class="extranaam">Watch box - €350.000</p>
+    </div>
+
+    <div class="item">
+        <form>
+            <h2>Bevestig jouw combinatie!</h2>
+
+            <h3>Kies 1 horloge</h3>
+            <ul class="listone">
+                <li><label><input name="product" value="1400000" type="radio" onclick="totalIt()"> Patek Grand
+                        (€1.400.000)</label></li>
+                <li><label><input name="product" value="1300000" type="radio" onclick="totalIt()"> RM 56-02
+                        (€1.300.000)</label></li>
+                <li><label><input name="product" value="950000" type="radio" onclick="totalIt()"> Royal Oak
+                        (€950.000)</label></li>
+                <li><label><input name="product" value="800000" type="radio" onclick="totalIt()"> Astronomia
+                        (€800.000)</label></li>
+                <li><label><input name="product" value="500000" type="radio" onclick="totalIt()"> Daytona
+                        (€500.000)</label></li>
+                <li><label><input name="product" value="800000" type="radio" onclick="totalIt()"> GF Quad
+                        (€800.000)</label></li>
+                <li><label><input name="product" value="1000000" type="radio" onclick="totalIt()"> Vacheron
+                        (€1.000.000)</label></li>
+                <li><label><input name="product" value="200000" type="radio" onclick="totalIt()"> Big Bang
+                        (€200.000)</label></li>
+                <li><label><input name="product" value="350000" type="radio" onclick="totalIt()"> Excalibur
+                        (€350.000)</label></li>
+                <li><label><input name="product" value="300000" type="radio" onclick="totalIt()"> HM9 Flow
+                        (€300.000)</label></li>
+            </ul>
+
+            <h3>Kies 1 extra product</h3>
+            <ul class="listtwo">
+                <li><label><input name="product2" value="350000" type="radio" onclick="totalIt()"> Watch box
+                        (€350.000)</label></li>
+                <li><label><input name="product2" value="220000" type="radio" onclick="totalIt()"> Sunglasses
+                        (€220.000)</label></li>
+                <li><label><input name="product2" value="380000" type="radio" onclick="totalIt()"> Travel bag
+                        (€380.000)</label></li>
+                <li><label><input name="product2" value="120000" type="radio" onclick="totalIt()"> Wallet
+                        (€120.000)</label></li>
+                <li><label><input name="product2" value="150000" type="radio" onclick="totalIt()"> Tom Ford parfume
+                        (€150.000)</label></li>
+                <li><label><input name="product2" value="400000" type="radio" onclick="totalIt()"> Jacket
+                        (€400.000)</label></li>
+            </ul>
+
+            <label for="total">Totaal:</label>
+            <input value="€0.00" readonly type="text" id="total" />
+        </form>
+
+
+        <button id="order" type="button">Koop nu!</button>
+    </div>    
+      
+    <div class="order-overlay" id="order-popup" style="display: none;">
+        <div class="order-content">
+          <h1>Bestelling gelukt!</h1>
+          <p>Dankjewel voor je aankoop bij <span>Watchworks!</span>.</p>
+          <button id="close-order-popup">Sluiten</button>
+        </div>
+      </div>
+
+    <audio id="Achtergrondmuziekje">
+        <source src="Audio/Achtergrondmuziekje.MP3" type="audio/mp3">
+    </audio>
+
+    <audio id="koopSound" src="Audio/Jazz-popup.MP3" preload="auto"></audio>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>

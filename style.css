@@ -1,0 +1,315 @@
+h1 {
+    font-family: Playfair Display;
+    margin-top: 8.4em;
+    font-size: 3.5em;
+}
+
+h1 a {
+    color: #f4c531;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+h2 {
+    color: #f4c531;
+}
+
+.item>h3 {
+    color: white !important;
+}
+
+.intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro-content {
+    text-align: center;
+}
+
+.intro-content span {
+    color: #f4c531
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro-content p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.intro-content button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #f4c531;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.intro-content button:hover {
+    background-color: darkgoldenrod;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #121212;
+    color: #f4c531;
+    padding-top: 0.6em;
+}
+
+#index {
+    background-image: url(Images/Watchworks2.JPEG);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+}
+
+.item {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 20em;
+    margin-right: 1em;
+    border: 2px solid #f4c531;
+    border-radius: 1em;
+    width: 35%;
+    display: block;
+    clear: both;
+    color: #fff;
+}
+
+#order {
+    margin-top: 1em;
+    font-size: large;
+    width: 7em;
+    height: 2em;
+    background-color: #f4c531;
+    color: #121212;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    margin: 0 auto;
+    column-gap: 1.8em;
+    row-gap: 1em;
+}
+
+.btn-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    margin: 0 auto;
+    column-gap: 1.8em;
+    row-gap: 1em;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 10em;
+    height: 3em;
+    background-color: transparent;
+    border: 2px solid #f4c531;
+    color: #f4c531;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover,
+#order:hover {
+    background-color: #f4c531;
+    color: #121212;
+    transition: 0.3s ease;
+}
+
+.portemonnee {
+    background-image: url(Images/Wallet.PNG);
+    background-size: 100%;
+    padding: 4.5em;
+    margin: 16px;
+}
+
+.portemonnee h3 {
+    font-family: Playfair Display;
+    font-size: 24px;
+    color: #f4c531;
+    margin-bottom: 30px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#wallet {
+    color: #f4c531;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1.6em;
+}
+
+.horloge {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.extra {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.extranaam {
+    color: #f4c531;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.horloge-naam {
+    color: #f4c531;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.item:nth-of-type(2) h3 {
+    margin-top: 1em;
+    color: #f4c531;
+}
+
+.listone {
+    font-size: 1.1em;
+    color: #f4c531;
+    list-style-type: none;
+    padding: 0;
+}
+
+.listone,
+.listtwo {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 1em;
+}
+
+.listone li,
+.listtwo li {
+    margin-bottom: 1.3em;
+}
+
+.listtwo {
+    font-size: 1.1em;
+    color: #f4c531;
+}
+
+label {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#total {
+    font-size: 1.1em;
+    margin-top: 1em;
+    display: block;
+}
+
+label[for="total"] {
+    font-size: 1.3em;
+}
+
+#order {
+    display: block;
+    margin: 20px auto;
+    width: 8em;
+    height: 2.3em;
+    background-color: transparent;
+    border: 2px solid #f4c531;
+    color: #f4c531;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.order-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.order-content {
+    text-align: center;
+}
+
+.order-content span {
+    color: #f4c531;
+}
+
+.order-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.order-content p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.order-content button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #f4c531;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-content button:hover {
+    background-color: darkgoldenrod;
+}
